@@ -1,0 +1,167 @@
+* {
+    border: none;
+    padding: 0;  
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+.hidden { display: none; }
+
+html, body { height: 100% }
+
+body { 
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: black;
+  color: white;
+  background-image: url('../images/denim.png');
+}
+/* style the header */
+
+header{
+    background-color: burlywood;
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+
+#main-logo { width: 380px; padding: 10px 0; }
+
+/*mian section styles */
+#character-nav {
+    text-align:center; 
+    background-color: rgba(225, 109, 8, 0.511);
+/* add a background oage to the nav element*/
+    background-image: url('../img/hogwarts.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:overlay;
+}   
+
+
+.characters{list-style-type: none;}
+
+.characters li{
+    display: inline-block;
+    height: 220px;
+    margin: 10px 8px;
+
+    background-color: black;
+    text-align: left;
+    overflow: hidden;
+}
+
+.characters li h5{
+    padding: 14px 8px;
+    color: white;
+}
+
+.characters li a {text-decoration: none;} /* remove underline */
+
+.characters li img {width: 150px; cursor: pointer;} 
+
+.sprite{
+    width: 150px;
+    height: 150px;
+    background-image: url('../img/Herry_Potter_Char.jpg');
+}
+
+.sprite:hover {background-position-y: -150px !important;}
+
+#Harry{background-position: 0 0;}
+#Hermione{background-position: -150px 0;}
+#Ron{background-position: -298px 0;}
+#Draco{background-position: -450px 0;}
+#Dumbledore{background-position: -598px 0;}
+#Minerva{background-position: -750px 0;}
+
+
+.brown-bumper {height: 6px; background-color:burlywood;}
+
+article{padding: 20px;}
+article h3{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+article p{
+    width: 80%;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* style the footer */
+footer{
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.sticky_footer{
+    position: sticky;
+    top: 100%;
+
+    height: 80px;
+    background-color:burlywood;
+}
+
+/* lightbox styles */
+.lightbox{
+    display: none;
+    width: 100vw; /* viewport width of the broswer window */
+    height: 100vh; /* viewport height of the broswer window */
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.85); /* tran */
+
+    background-repeat: no-repeat;
+
+    background-position: 40px bottom;
+    background-size: 55vh;
+}
+
+.Ib_close{
+    color: white;
+    font-size: 2em;
+
+    text-decoration: none;
+
+    position: relative;
+    top: 20px;
+    left: 96%;
+    font-weight: bolder;
+}
+
+.Ib_close:hover {opacity: 0.5;}
+
+.lightbox article {
+    width: 55%;
+    margin-left: 40%;
+    margin-top: 50px;
+}
+
+.Ib_text, .Ib_heading {text-align: left;}
+
+.Ib_text {
+    line-height: 1.6;
+    margin-left: 0;
+    padding-top: 2em;
+}
+
+#lightBox{
+    background-image: url('../img/Harry_Potter.png');
+}
+
+#lightBox2{
+    background-image: url('../img/Zjc2IX0.png');
+    
+}
+
+/* toggle the lightbox on */
+.lightbox:target {display: block;}
+
+/* .lightbox:target {display: block} */
